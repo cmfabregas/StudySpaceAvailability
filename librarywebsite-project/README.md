@@ -16,4 +16,4 @@ Insert Firebase API Credentials -->  ```main/sensors.py & main/views.py```
 
 Run: ```python3 manage.py runserver```
 
-Access: '''localhost:8000''' on your web browser
+Access: ```localhost:8000``` on your web browser
