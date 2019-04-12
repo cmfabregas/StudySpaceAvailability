@@ -9,6 +9,9 @@ Install the Python Virtual Environment package:
 Create the Virtual Environment:
 ```virtualenv websiteenvironment```
 
+Activate Virtual Environment:
+```source websiteenvironment/bin/activate```
+
 Then install dependencies by:
 ```pip3 install -r requirements.txt```
 
