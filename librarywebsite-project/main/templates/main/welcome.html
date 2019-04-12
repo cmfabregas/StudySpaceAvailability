@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+      <meta charset="utf-8">
+      <title>Library Detection</title>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+
+  <!-- header -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Welcome {{email}}</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav navbar-right">
+        <li class="nav-item active">
+          <a class="nav-link" href="{% url 'main:home'%}">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Resources</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'main:logout' %}">Log out</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12">
+
+            <h3>Available study spaces</h3>
+              <h4> Before you visit, </h4>
+            <p class="paragraph"> please check the <a href="#"> opening hours </a>  When sites are closed, their seats currently show as fully available. For more information, see our study space availability <a href="">FAQs</a></p>
+
+          </div>
+
+        </div><!-- row -->
+        <div class="row">
+          <div class="col-md-6" id="first">
+
+          </div>
+         </div><!-- row-->
+         <div class="row">
+          <section class="col-md-4"  id = "seatsavailable">
+              <div class="alert alert-success" role="alert">
+                  First Floor:{{floor1}} / 3 seats taken
+              </div>
+              <div class="alert alert-success" role="alert">
+                  Second Floor: Not Available
+
+              </div>
+          </section>
+
+         </div> <!-- row -->
+      </div><!--container-->
+
+
+
+</body>
+
+</html>
