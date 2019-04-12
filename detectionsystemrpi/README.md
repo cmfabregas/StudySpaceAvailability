@@ -18,4 +18,6 @@ Then install dependencies by:
 
 Insert Firebase API Credentials --> ```sensors.py & settings.py```
 
+Insert sensorID on the firebase cloud firestore (document ID)
+
 Run: ```python3 humandetection.py```

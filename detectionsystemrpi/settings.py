@@ -10,7 +10,7 @@ cred = credentials.Certificate("**INSERT FIREBASE AUTHENTICATION**")
 class Settings:
 
 #id of the sensor
-sensorID = u'qeDmnlyKZ55KECFAoTs3'
+sensorID = u'**Set sensor ID that will differentiate it on the database from other sensors**'
  #constructor
     def __init__(self):
         self.db = firestore.Client()
