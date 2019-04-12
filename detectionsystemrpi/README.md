@@ -10,4 +10,4 @@ Then install all dependencies:
 
 Insert Firebase API Credentials --> sensors.py & settings.py
 
-```python3 humandetection.py```
+Run: ```python3 humandetection.py```
