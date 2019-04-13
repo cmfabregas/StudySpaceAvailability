@@ -18,6 +18,10 @@ Then install dependencies by:
 
 Insert Firebase API Credentials --> ```sensors.py & settings.py```
 
-Insert sensorID on the firebase cloud firestore (document ID)
+
+Insert sensorID on the firebase cloud firestore (document ID):
+
+This will need to be configured on the firebase datastore with a collection called ```SensorSetting``` --> generate a Document with Auto ID copy the ID and paste it on the sensorID variable in ```sensors.py``` and create two fields ```Desk``` and ```Floor``` with values for Desk number Ex: ```desk1``` and floor number Ex: ```floor```. 
+
 
 Run: ```python3 humandetection.py```
